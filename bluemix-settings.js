@@ -80,6 +80,8 @@ settings.couchAppname = process.env.NODE_RED_APPLICATION_NAME || VCAP_APPLICATIO
 
 var storageServiceName = process.env.NODE_RED_STORAGE_NAME || new RegExp("^"+settings.couchAppname+".cloudantNoSQLDB");
 var couchService = appEnv.getService(storageServiceName);
+console.log("### storageServiceName = " + storageServiceName);
+console.log("### couchservie = " + couchService);
 
 if (!couchService) {
     console.log("Failed to find Cloudant service");
