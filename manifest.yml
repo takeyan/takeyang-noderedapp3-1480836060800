@@ -1,0 +1,10 @@
+applications:
+- path: .
+  memory: 512M
+  instances: 1
+  domain: mybluemix.net
+  name: takeyang-noderedapp3
+  host: takeyang-noderedapp3
+  disk_quota: 1024M
+  services:
+  - takeyang-noderedapp3-cloudantNoSQLDB
